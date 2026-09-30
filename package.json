@@ -1,0 +1,23 @@
+{
+  "name": "business-website-monorepo",
+  "version": "1.0.0",
+  "description": "Production-ready Full-stack Business Website and Admin Management System",
+  "scripts": {
+    "dev:server": "npm.cmd --prefix server run dev",
+    "dev:client": "npm.cmd --prefix client run dev",
+    "build:server": "npm.cmd --prefix server run build",
+    "build:client": "npm.cmd --prefix client run build",
+    "build": "npm.cmd --prefix server run build && npm.cmd --prefix client run build",
+    "start": "npm.cmd --prefix server start",
+    "seed": "npm.cmd --prefix server run seed"
+  },
+  "keywords": [
+    "business",
+    "ecommerce",
+    "catalogue",
+    "admin-dashboard",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC"
+}

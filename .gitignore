@@ -1,0 +1,58 @@
+# ==========================================
+# GIT IGNORE CONFIGURATION
+# ==========================================
+
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.log
+
+# Production build outputs
+dist/
+build/
+*/dist/
+*/build/
+
+# Environment files and credentials (CRITICAL)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*/.env
+*/.env.*
+!*/.env.example
+!*/.env.*.example
+passwords/
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Local runtime storage & database files
+server/data/
+data/
+*.json.bak
+
+# Uploads directory (when using local storage fallback)
+uploads/
+server/uploads/
+*/uploads/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
